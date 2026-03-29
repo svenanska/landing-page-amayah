@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-rosewood antialiased;
+  background-image: radial-gradient(circle at top right, #fff 0%, #fff9f7 40%, #fceef2 100%);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-5xl px-5 sm:px-8;
+}
+
+.card {
+  @apply rounded-3xl border border-white/60 bg-white/80 shadow-lg backdrop-blur;
+}
