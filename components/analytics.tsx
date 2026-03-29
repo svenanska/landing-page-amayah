@@ -1,19 +1,18 @@
 'use client';
 
 import Script from 'next/script';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import { GA_TRACKING_ID, pageview } from '@/lib/gtag';
 
 export function Analytics() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const query = searchParams.toString();
+    const query = window.location.search.replace(/^\?/, '');
     const url = query ? `${pathname}?${query}` : pathname;
     pageview(url);
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   if (!GA_TRACKING_ID) {
     return null;
