@@ -6,7 +6,7 @@ export default function Home() {
       <div className="flex w-full max-w-sm flex-1 flex-col items-center text-center">
         <div className="relative mt-2 h-[52svh] max-h-[460px] w-full overflow-hidden rounded-2xl">
           <Image
-            src="/image.jpg"
+            src="/freepik_keep-the-same-pose-and-setup-adjust-expressions-both-have-soft-relaxed-expressions-slight-smile-not-wide-slightly-parted-lips-calm-intimate-energy-reduce-overly-happy-expression-make-the-_0001.png"
             alt="Portrait"
             fill
             priority
