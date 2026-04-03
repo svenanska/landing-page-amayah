@@ -13,7 +13,7 @@ export default function Home() {
           className="mb-5 h-[132px] w-[132px] rounded-full object-cover shadow-[0_12px_34px_rgba(168,85,247,0.28),0_4px_14px_rgba(236,72,153,0.2)]"
         />
 
-        <div className="cta-wrap relative w-full">
+        <div className="w-full">
           <a
             href="https://www.fanvue.com/amayahrnlds/fv-15"
             target="_blank"
@@ -22,31 +22,6 @@ export default function Home() {
           >
             come chat with me...
           </a>
-
-          <span className="cta-hand-pointer" aria-hidden="true">
-            <span className="cta-hand-ripple" />
-            <svg
-              viewBox="0 0 28 28"
-              className="cta-hand-svg"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.2 24.2v-8a1.3 1.3 0 0 1 2.6 0V20m0 0v-8.5a1.3 1.3 0 0 1 2.6 0V20m0 0v-7.2a1.3 1.3 0 1 1 2.6 0V20m0 0v-5.3a1.3 1.3 0 1 1 2.6 0v5.8a4.6 4.6 0 0 1-4.6 4.6h-1.7a4.1 4.1 0 0 1-4.1-4.1Z"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M18.7 7.5a2.2 2.2 0 0 1 3.1 3.1M20.2 5.6a4.1 4.1 0 0 1 5.8 5.8"
-                stroke="currentColor"
-                strokeWidth="1.65"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
         </div>
       </div>
     </main>
