@@ -47,22 +47,24 @@ body {
 }
 
 .cta-hand {
-  animation: cta-hand-nudge 1.3s ease-in-out infinite;
-  transform-origin: 28% 65%;
+  animation: cta-hand-tap 1.35s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  transform-origin: 50% 68%;
 }
 
-@keyframes cta-hand-nudge {
+@keyframes cta-hand-tap {
   0%,
-  62%,
+  68%,
   100% {
     transform: translateY(0) scale(1);
+    opacity: 0.95;
+  }
+  28% {
+    transform: translateY(0.7px) scale(0.96);
+    opacity: 0.88;
+  }
+  42% {
+    transform: translateY(-0.6px) scale(1.03);
     opacity: 1;
-  }
-  25% {
-    transform: translateY(0.5px) scale(0.96);
-  }
-  36% {
-    transform: translateY(-1px) scale(1.05);
   }
 }
 
