@@ -1,18 +1,25 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
-    <main className="flex min-h-[100svh] w-full flex-col items-center overflow-hidden bg-[#f1ebf2] px-6 pt-10 pb-8">
-      <div className="flex w-full max-w-sm flex-1 flex-col items-center justify-center text-center">
-        <p className="text-sm text-[#5f5265]">We&apos;re waiting on you...</p>
-
-        <p className="mt-6 text-xs text-[#6f5f75]">click the button below and send me a message</p>
+    <main className="flex h-[100svh] w-full items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,#fdf4ff_0%,#f9ebff_50%,#f8e8f5_100%)] px-5">
+      <div className="flex w-full max-w-xs flex-col items-center justify-center text-center">
+        <Image
+          src="/profile.jpg"
+          alt="Profile"
+          width={132}
+          height={132}
+          priority
+          className="mb-5 h-[132px] w-[132px] rounded-full object-cover shadow-[0_12px_34px_rgba(168,85,247,0.28),0_4px_14px_rgba(236,72,153,0.2)]"
+        />
 
         <a
           href="https://www.fanvue.com/amayahrnlds/fv-15"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#a855f7] to-[#ec4899] px-9 py-[1.05rem] text-[1.05rem] font-semibold text-white shadow-[0_20px_38px_rgba(168,85,247,0.38),0_8px_22px_rgba(236,72,153,0.28)] ring-1 ring-fuchsia-300/45 transition-all duration-200 ease-out hover:scale-[1.03] hover:shadow-[0_24px_46px_rgba(168,85,247,0.45),0_12px_30px_rgba(236,72,153,0.35)] hover:brightness-105 active:scale-[0.97]"
+          className="inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#a855f7] to-[#ec4899] px-8 py-4 text-lg font-semibold text-white shadow-[0_0_28px_rgba(236,72,153,0.4),0_16px_36px_rgba(168,85,247,0.34)] transition-transform duration-200 ease-out hover:scale-[1.03] active:scale-[0.97]"
         >
-          Receive my 🌶️🎁
+          come chat with me...
         </a>
       </div>
     </main>
