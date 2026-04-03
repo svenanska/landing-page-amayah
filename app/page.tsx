@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex h-[100svh] w-full items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,#fdf4ff_0%,#f9ebff_50%,#f8e8f5_100%)] px-5">
       <div className="flex w-full max-w-xs flex-col items-center justify-center text-center">
         <Image
-          src="/profile.jpg"
+          src="/beachselfie.png"
           alt="Profile"
           width={132}
           height={132}
