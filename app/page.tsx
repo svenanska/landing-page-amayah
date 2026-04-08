@@ -13,7 +13,7 @@ export default function Home() {
           className="mb-5 h-[132px] w-[132px] rounded-full object-cover shadow-[0_12px_34px_rgba(168,85,247,0.28),0_4px_14px_rgba(236,72,153,0.2)]"
         />
 
-        <p className="mb-4 text-sm font-medium text-white/75">
+        <p className="mb-4 text-sm font-medium text-[#4A4A4A]">
           you won’t see this on tiktok 👀🍒
         </p>
 
