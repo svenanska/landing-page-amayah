@@ -13,14 +13,18 @@ export default function Home() {
           className="mb-5 h-[132px] w-[132px] rounded-full object-cover shadow-[0_12px_34px_rgba(168,85,247,0.28),0_4px_14px_rgba(236,72,153,0.2)]"
         />
 
+        <p className="mb-4 text-sm font-medium text-white/75">
+          you won’t see this on tiktok 👀🍒
+        </p>
+
         <div className="w-full">
           <a
-            href="https://www.fanvue.com/amayahrnlds/fv-15"
+            href="https://t.me/+5p-f81KUR89hYzlk"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-premium inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#a855f7] to-[#ec4899] px-8 py-4 text-lg font-semibold text-white shadow-[0_0_28px_rgba(236,72,153,0.4),0_16px_36px_rgba(168,85,247,0.34)] transition-transform duration-200 ease-out hover:scale-[1.03] active:scale-[0.97]"
           >
-            come chat with me...
+            Enter Here...
           </a>
         </div>
       </div>
