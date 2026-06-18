@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'amayah.chat | closer than your feed',
+  title: 'Elina Nyberg',
   description: 'A private, personal teaser space to continue the vibe beyond socials.'
 };
 
