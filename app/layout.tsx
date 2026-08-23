@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Elina Nyberg',
+  title: 'Elina',
   description: 'A private, personal teaser space to continue the vibe beyond socials.'
 };
 

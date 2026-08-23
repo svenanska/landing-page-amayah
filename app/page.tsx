@@ -1,33 +1,68 @@
-import Image from 'next/image';
+'use client';
+
+import { useEffect, useState } from 'react';
+
+const TELEGRAM_URL = 'https://t.me/+Xnake9WVK2I2NGJk';
+
+function isTikTokBrowser(userAgent: string) {
+  return /TikTok|musical_ly|BytedanceWebview|trill/i.test(userAgent);
+}
 
 export default function Home() {
+  const [isTikTok, setIsTikTok] = useState(false);
+
+  useEffect(() => {
+    if (isTikTokBrowser(window.navigator.userAgent)) {
+      setIsTikTok(true);
+      return;
+    }
+
+    window.location.replace(TELEGRAM_URL);
+  }, []);
+
+  if (!isTikTok) {
+    return <main className="h-[100svh] overflow-hidden bg-[#fce7f3]" />;
+  }
+
   return (
-    <main className="flex h-[100svh] w-full items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,#fdf4ff_0%,#f9ebff_50%,#f8e8f5_100%)] px-5">
-      <div className="flex w-full max-w-xs flex-col items-center justify-center text-center">
-        <Image
-          src="/elina (1).png"
-          alt="Profile"
-          width={132}
-          height={132}
-          priority
-          className="mb-5 h-[132px] w-[132px] rounded-full object-cover shadow-[0_12px_34px_rgba(168,85,247,0.28),0_4px_14px_rgba(236,72,153,0.2)]"
-        />
-
-        <p className="mb-4 text-sm font-medium text-[#4A4A4A]">
-          more of me ⬇️
-        </p>
-
-        <div className="w-full">
-          <a
-            href="https://t.me/+eK3pNHY8pC85ODk8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-premium inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#a855f7] to-[#ec4899] px-8 py-4 text-lg font-semibold text-white shadow-[0_0_28px_rgba(236,72,153,0.4),0_16px_36px_rgba(168,85,247,0.34)] transition-transform duration-200 ease-out hover:scale-[1.03] active:scale-[0.97]"
+    <main className="relative flex h-[100svh] w-full items-center justify-center overflow-hidden bg-[#fce7f3] px-6 text-black">
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 120 120"
+        className="absolute right-[max(0.75rem,env(safe-area-inset-right))] top-[max(0.75rem,env(safe-area-inset-top))] h-28 w-28 sm:h-32 sm:w-32"
+      >
+        <defs>
+          <marker
+            id="arrowhead"
+            markerWidth="8"
+            markerHeight="8"
+            refX="6"
+            refY="4"
+            orient="auto"
           >
-            CLICK HERE
-          </a>
-        </div>
-      </div>
+            <path d="M 0 0 L 8 4 L 0 8 Z" fill="currentColor" />
+          </marker>
+        </defs>
+        <line
+          x1="20"
+          y1="100"
+          x2="98"
+          y2="22"
+          stroke="currentColor"
+          strokeWidth="6"
+          strokeLinecap="round"
+          markerEnd="url(#arrowhead)"
+        />
+      </svg>
+
+      <ol className="mx-auto flex w-full max-w-sm -translate-y-2 flex-col items-center gap-10 text-center text-2xl font-bold leading-snug">
+        <li>
+          1. Tap the •••
+          <br />
+          in the top-right corner.
+        </li>
+        <li>2. Tap “Open in browser”.</li>
+      </ol>
     </main>
   );
 }
