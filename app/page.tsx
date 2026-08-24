@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const TELEGRAM_URL = 'https://t.me/+Xnake9WVK2I2NGJk';
+const TELEGRAM_URL = 'https://t.me/elinalovexo';
 
 function isTikTokBrowser(userAgent: string) {
   return /TikTok|musical_ly|BytedanceWebview|trill/i.test(userAgent);
